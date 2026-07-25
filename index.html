@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Unit Converter</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="app-header">
+            <div class="brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                </div>
+                <div>
+                    <h1>UnitConversion</h1>
+                    <p class="subtitle">Multi-category unit converterr</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="converter-container">
+            <nav class="category-tabs" aria-label="Converter Categories">
+                <button class="tab-btn active" data-category="length">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span>Length</span>
+                </button>
+                <button class="tab-btn" data-category="weight">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <span>Weight</span>
+                </button>
+                <button class="tab-btn" data-category="temperature">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <span>Temp</span>
+                </button>
+                <button class="tab-btn" data-category="currency">
+                    <i class="fa-solid fa-coins"></i>
+                    <span>Currency</span>
+                </button>
+                <button class="tab-btn" data-category="area">
+                    <i class="fa-solid fa-chart-area"></i>
+                    <span>Area</span>
+                </button>
+                <button class="tab-btn" data-category="volume">
+                    <i class="fa-solid fa-flask"></i>
+                    <span>Volume</span>
+                </button>
+                <button class="tab-btn" data-category="speed">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Speed</span>
+                </button>
+                <button class="tab-btn" data-category="pressure">
+                    <i class="fa-solid fa-compress"></i>
+                    <span>Pressure</span>
+                </button>
+                <button class="tab-btn" data-category="power">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Power</span>
+                </button>
+                <button class="tab-btn" data-category="numsys">
+                    <i class="fa-solid fa-binary"></i>
+                    <span>Base / Num</span>
+                </button>
+            </nav>
+
+            <div class="card converter-card">
+                <div class="converter-grid">
+                    <div class="unit-group">
+                        <label for="from-value">From</label>
+                        <div class="input-container">
+                            <input type="text" id="from-value" value="1" placeholder="Enter value" autocomplete="off">
+                            <select id="from-unit" aria-label="Select source unit"></select>
+                        </div>
+                    </div>
+
+                    <div class="swap-container">
+                        <button id="swap-btn" class="btn-swap" title="Swap Units" aria-label="Swap source and target units">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="unit-group">
+                        <label for="to-value">To</label>
+                        <div class="input-container">
+                            <input type="text" id="to-value" readonly placeholder="Result">
+                            <select id="to-unit" aria-label="Select target unit"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="converter-footer">
+                    <div class="formula-box">
+                        <span class="formula-label"><i class="fa-solid fa-circle-info"></i> Formula:</span>
+                        <span id="formula-text" class="formula-text">1 meter = 3.28084 feet</span>
+                    </div>
+
+                    <button id="copy-btn" class="btn-copy" title="Copy result to clipboard">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy-text">Copy Result</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card reference-card">
+                <h2><i class="fa-solid fa-bookmark"></i> Common Equivalents</h2>
+                <div id="reference-list" class="reference-grid">
+                    
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
