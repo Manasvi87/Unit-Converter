@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert Celsius to Fahrenheit with the formula (°C × 9/5) + 32. Covers weather, baking oven settings, body temperature, worked examples, and a full table.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0D4746">
+    <title>Celsius to Fahrenheit Conversion Guide | Free Online Unit Converter</title>
+    <link rel="canonical" href="https://manasvi87.github.io/Unit-Converter/guides/celsius-to-fahrenheit.html">
+    <link rel="icon" type="image/png" href="../favicon.png">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Celsius to Fahrenheit Conversion Guide | Free Online Unit Converter">
+    <meta property="og:description" content="Learn how to convert °C to °F using (°C × 9/5) + 32 with weather, fever, and oven temperature examples.">
+    <meta property="og:url" content="https://manasvi87.github.io/Unit-Converter/guides/celsius-to-fahrenheit.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="info-page">
+    <button id="side-nav-toggle" class="side-nav-toggle" type="button" aria-label="Toggle site navigation" aria-expanded="false" aria-controls="side-nav">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <aside id="side-nav" class="side-nav" aria-label="Site Navigation">
+        <div class="side-nav-header">
+            <span class="side-nav-brand-icon" aria-hidden="true">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="side-nav-heading">Menu</span>
+        </div>
+        <nav class="side-nav-links" aria-label="Pages">
+            <a href="../index.html" class="side-nav-link" title="Home">
+                <span class="side-nav-icon"><i class="fa-solid fa-house"></i></span>
+                <span class="side-nav-label">Home</span>
+            </a>
+            <a href="../about.html" class="side-nav-link" title="About">
+                <span class="side-nav-icon"><i class="fa-solid fa-circle-info"></i></span>
+                <span class="side-nav-label">About</span>
+            </a>
+            <a href="../contact.html" class="side-nav-link" title="Contact">
+                <span class="side-nav-icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="side-nav-label">Contact</span>
+            </a>
+            <a href="../privacy-policy.html" class="side-nav-link" title="Privacy Policy">
+                <span class="side-nav-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <span class="side-nav-label">Privacy Policy</span>
+            </a>
+            <a href="../terms.html" class="side-nav-link" title="Terms">
+                <span class="side-nav-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                <span class="side-nav-label">Terms</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="page-wrapper">
+        <header class="site-header">
+            <div class="header-inner">
+                <a href="../index.html" class="brand" aria-label="UnitConversion Home">
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div>
+                        <span class="brand-title">UnitConversion</span>
+                        <p class="subtitle">Multi-category unit converter</p>
+                    </div>
+                </a>
+            </div>
+        </header>
+
+        <main class="info-container">
+            <section class="info-hero" aria-labelledby="guide-h1">
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span>/</span>
+                    <a href="../index.html#conversion-guides">Guides</a>
+                    <span>/</span>
+                    <span>Celsius to Fahrenheit</span>
+                </nav>
+                <h1 id="guide-h1">How Do You Convert Celsius to Fahrenheit?</h1>
+                <p>
+                    Understand the exact offset formula between °C and °F, convert weather forecasts, check body
+                    temperatures, and translate metric oven recipes in seconds.
+                </p>
+            </section>
+
+            <section class="card info-section" aria-labelledby="intro-heading">
+                <h2 id="intro-heading"><i class="fa-solid fa-temperature-half"></i> Understanding Celsius and Fahrenheit</h2>
+                <p>
+                    <strong>Celsius (°C)</strong> is the metric temperature scale used internationally for weather,
+                    science, medicine, and cooking. On the Celsius scale, pure water freezes at <strong>0 °C</strong> and
+                    boils at <strong>100 °C</strong> (at standard atmospheric pressure).
+                </p>
+                <p>
+                    <strong>Fahrenheit (°F)</strong> is used primarily in the United States and a few Caribbean territories.
+                    On the Fahrenheit scale, water freezes at <strong>32 °F</strong> and boils at <strong>212 °F</strong>—a
+                    180-degree interval compared to Celsius&rsquo;s 100-degree interval. That means each 1 °C step equals
+                    1.8 °F (or 9/5 °F), and the scales start at different zero points.
+                </p>
+            </section>
+
+            <section class="card info-section" aria-labelledby="formula-heading">
+                <h2 id="formula-heading"><i class="fa-solid fa-square-root-variable"></i> Conversion Formula</h2>
+                <div class="formula-banner">
+                    &deg;F = (&deg;C &times; 9/5) + 32
+                </div>
+                <p>
+                    Because <code>9 / 5 = 1.8</code>, you multiply the Celsius temperature by <code>1.8</code> first,
+                    then add <code>32</code>. Always multiply before adding 32!
+                </p>
+            </section>
+
+            <section class="card info-section" aria-labelledby="examples-heading">
+                <h2 id="examples-heading"><i class="fa-solid fa-fire-burner"></i> Worked Examples</h2>
+                <div class="example-list">
+                    <article class="example-item">
+                        <h3>Example 1: Pleasant Spring Weather (20 °C)</h3>
+                        <p>
+                            <code>(20 &times; 9/5) + 32 = 36 + 32 = 68 &deg;F</code>.
+                        </p>
+                    </article>
+                    <article class="example-item">
+                        <h3>Example 2: Normal Human Body Temperature (37 °C)</h3>
+                        <p>
+                            <code>(37 &times; 9/5) + 32 = 66.6 + 32 = 98.6 &deg;F</code>.
+                        </p>
+                    </article>
+                    <article class="example-item">
+                        <h3>Example 3: Standard Baking Oven Setting (180 °C)</h3>
+                        <p>
+                            <code>(180 &times; 9/5) + 32 = 324 + 32 = 356 &deg;F</code> (often rounded to 350 °F in US recipes).
+                        </p>
+                    </article>
+                    <article class="example-item">
+                        <h3>Example 4: Sub-Zero Winter Cold (-15 °C)</h3>
+                        <p>
+                            <code>(-15 &times; 9/5) + 32 = -27 + 32 = 5 &deg;F</code>.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="card info-section" aria-labelledby="table-heading">
+                <h2 id="table-heading"><i class="fa-solid fa-table"></i> Celsius to Fahrenheit Reference Table</h2>
+                <div class="conversion-table-wrap">
+                    <table class="conversion-table">
+                        <thead>
+                            <tr>
+                                <th>Celsius (&deg;C)</th>
+                                <th>Fahrenheit (&deg;F)</th>
+                                <th>Common Reference</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>-40 &deg;C</td><td>-40 &deg;F</td><td>Where both scales meet</td></tr>
+                            <tr><td>0 &deg;C</td><td>32 &deg;F</td><td>Freezing point of water</td></tr>
+                            <tr><td>10 &deg;C</td><td>50 &deg;F</td><td>Cool outdoor weather</td></tr>
+                            <tr><td>20 &deg;C</td><td>68 &deg;F</td><td>Comfortable room temperature</td></tr>
+                            <tr><td>25 &deg;C</td><td>77 &deg;F</td><td>Warm summer day</td></tr>
+                            <tr><td>37 &deg;C</td><td>98.6 &deg;F</td><td>Normal body temperature</td></tr>
+                            <tr><td>100 &deg;C</td><td>212 &deg;F</td><td>Boiling point of water</td></tr>
+                            <tr><td>180 &deg;C</td><td>356 &deg;F</td><td>Moderate baking oven</td></tr>
+                            <tr><td>200 &deg;C</td><td>392 &deg;F</td><td>Hot roasting oven</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="card info-section" aria-labelledby="apps-heading">
+                <h2 id="apps-heading"><i class="fa-solid fa-cloud-sun"></i> Real-World Applications</h2>
+                <ul class="info-list">
+                    <li><strong>Cooking &amp; Baking:</strong> Converting European or UK oven dials (°C) into US oven settings (°F) and checking meat thermometer target temperatures.</li>
+                    <li><strong>Weather &amp; Travel:</strong> Packing the right clothes when international weather apps show 15 °C or 30 °C.</li>
+                    <li><strong>Healthcare &amp; Thermometers:</strong> Interpreting digital thermometer readings when traveling abroad (for example, recognizing 38.5 °C as 101.3 °F fever).</li>
+                    <li><strong>Aquariums, Pools &amp; PC Hardware:</strong> Checking water heaters or CPU/GPU thermal specs across documentation written in °C or °F.</li>
+                </ul>
+            </section>
+
+            <section class="card info-section" aria-labelledby="faq-heading">
+                <h2 id="faq-heading"><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <details class="faq-item" open>
+                        <summary>At what temperature are Celsius and Fahrenheit equal?</summary>
+                        <p>
+                            They are equal at <strong>-40°</strong>: <code>(-40 &times; 9/5) + 32 = -72 + 32 = -40 &deg;F</code>.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How can I estimate Celsius to Fahrenheit quickly in my head?</summary>
+                        <p>
+                            Double the Celsius number and add 30. For 20 °C: <code>(20 &times; 2) + 30 = 70 &deg;F</code>
+                            (very close to the exact 68 °F). This shortcut works well for everyday weather between 0 °C and 30 °C.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I convert Fahrenheit back to Celsius?</summary>
+                        <p>
+                            Subtract 32 first, then multiply by <code>5/9</code>: <code>&deg;C = (&deg;F &minus; 32) &times; 5/9</code>.
+                            For example, <code>(77 &minus; 32) &times; 5/9 = 25 &deg;C</code>.
+                        </p>
+                    </details>
+                </div>
+            </section>
+
+            <section class="card info-section" aria-labelledby="try-heading">
+                <h2 id="try-heading"><i class="fa-solid fa-calculator"></i> Try Our Converter &amp; Related Guides</h2>
+                <p>Convert Celsius, Fahrenheit, and Kelvin values instantly using our temperature converter.</p>
+                <a href="../index.html?category=temperature&amp;from=c&amp;to=f" class="cta-btn">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i> Open Celsius to Fahrenheit Converter
+                </a>
+                <div class="guides-grid">
+                    <a href="liters-to-gallons.html" class="guide-link-card">
+                        <span class="guide-cat">Related Kitchen Guide</span>
+                        <h3>Liters to US Gallons</h3>
+                        <p>Convert liquid volumes for recipes, water storage, and aquariums.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="kg-to-pounds.html" class="guide-link-card">
+                        <span class="guide-cat">Related Cooking Guide</span>
+                        <h3>Kilograms to Pounds</h3>
+                        <p>Switch ingredient and package weights between metric and US units.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2026 UnitConversion &mdash; Free Online Unit Converter across multiple categories. | <a href="mailto:manasvistudent2006@gmail.com">manasvistudent2006@gmail.com</a></p>
+        </footer>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

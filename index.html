@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free online unit converter for length, weight, temperature, currency, area, volume, speed, pressure, power, and number systems with instant formulas and common equivalents.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0D4746">
+    <title>Free Online Unit Converter | Universal Unit Conversion</title>
+    <link rel="canonical" href="https://manasvi87.github.io/Unit-Converter/">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Free Online Unit Converter">
+    <meta property="og:description" content="Convert length, weight, temperature, currency, volume, speed and more with our free online unit converter.">
+    <meta property="og:url" content="https://manasvi87.github.io/Unit-Converter/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="side-nav-toggle" class="side-nav-toggle" type="button" aria-label="Toggle site navigation" aria-expanded="false" aria-controls="side-nav">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <aside id="side-nav" class="side-nav" aria-label="Site Navigation">
+        <div class="side-nav-header">
+            <span class="side-nav-brand-icon" aria-hidden="true">
+                <i class="fa-solid fa-bars"></i>
+            </span>
+            <span class="side-nav-heading">Menu</span>
+        </div>
+        <nav class="side-nav-links" aria-label="Pages">
+            <a href="index.html" class="side-nav-link" aria-current="page" title="Home">
+                <span class="side-nav-icon"><i class="fa-solid fa-house"></i></span>
+                <span class="side-nav-label">Home</span>
+            </a>
+            <a href="about.html" class="side-nav-link" title="About">
+                <span class="side-nav-icon"><i class="fa-solid fa-circle-info"></i></span>
+                <span class="side-nav-label">About</span>
+            </a>
+            <a href="contact.html" class="side-nav-link" title="Contact">
+                <span class="side-nav-icon"><i class="fa-solid fa-envelope"></i></span>
+                <span class="side-nav-label">Contact</span>
+            </a>
+            <a href="privacy-policy.html" class="side-nav-link" title="Privacy Policy">
+                <span class="side-nav-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                <span class="side-nav-label">Privacy Policy</span>
+            </a>
+            <a href="terms.html" class="side-nav-link" title="Terms">
+                <span class="side-nav-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                <span class="side-nav-label">Terms</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="page-wrapper">
+        <header class="app-header">
+            <div class="header-inner">
+                <a href="#top" class="brand" aria-label="UnitConversion Home">
+                    <div class="brand-icon">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </div>
+                    <div>
+                        <span class="brand-title">Unit Conversion</span>
+                        <p class="subtitle">Multi-category unit converter</p>
+                    </div>
+                </a>
+                <nav class="top-nav" aria-label="Page sections">
+                    <a href="#converter">Converter</a>
+                    <a href="#categories">Categories</a>
+                    <a href="#how-to-use">How to Use</a>
+                    <a href="#popular-conversions">Popular</a>
+                    <a href="#conversion-guides">Guides</a>
+                    <a href="#faq">FAQ</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="top" class="hero-section" aria-labelledby="hero-heading">
+            <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Instant Browser Calculations</span>
+            <h1 id="hero-heading" class="hero-title">Free Online Unit Converter</h1>
+            <p class="hero-subtitle">
+                Quickly convert measurements across length, weight, temperature, currency, area, volume, speed,
+                pressure, power, and number systems—complete with live formulas and handy equivalents.
+            </p>
+            <div class="hero-highlights">
+                <span><i class="fa-solid fa-layer-group"></i> 10 Unit Categories</span>
+                <span><i class="fa-solid fa-calculator"></i> Real-Time Results</span>
+                <span><i class="fa-solid fa-arrow-right-arrow-left"></i> One-Click Swap &amp; Copy</span>
+            </div>
+        </section>
+
+        <main id="converter" class="converter-container">
+            <nav class="category-tabs" aria-label="Converter Categories">
+                <button class="tab-btn active" data-category="length">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span>Length</span>
+                </button>
+                <button class="tab-btn" data-category="weight">
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    <span>Weight</span>
+                </button>
+                <button class="tab-btn" data-category="temperature">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <span>Temp</span>
+                </button>
+                <button class="tab-btn" data-category="currency">
+                    <i class="fa-solid fa-coins"></i>
+                    <span>Currency</span>
+                </button>
+                <button class="tab-btn" data-category="area">
+                    <i class="fa-solid fa-chart-area"></i>
+                    <span>Area</span>
+                </button>
+                <button class="tab-btn" data-category="volume">
+                    <i class="fa-solid fa-flask"></i>
+                    <span>Volume</span>
+                </button>
+                <button class="tab-btn" data-category="speed">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Speed</span>
+                </button>
+                <button class="tab-btn" data-category="pressure">
+                    <i class="fa-solid fa-compress"></i>
+                    <span>Pressure</span>
+                </button>
+                <button class="tab-btn" data-category="power">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Power</span>
+                </button>
+                <button class="tab-btn" data-category="numsys">
+                    <i class="fa-solid fa-binary"></i>
+                    <span>Base / Num</span>
+                </button>
+            </nav>
+
+            <div class="card converter-card">
+                <div class="converter-grid">
+                    <div class="unit-group">
+                        <label for="from-value">From</label>
+                        <div class="input-container">
+                            <input type="text" id="from-value" value="1" placeholder="Enter value" autocomplete="off">
+                            <select id="from-unit" aria-label="Select source unit"></select>
+                        </div>
+                    </div>
+
+                    <div class="swap-container">
+                        <button id="swap-btn" class="btn-swap" title="Swap Units" aria-label="Swap source and target units">
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        </button>
+                    </div>
+
+
+                    <div class="unit-group">
+                        <label for="to-value">To</label>
+                        <div class="input-container">
+                            <input type="text" id="to-value" readonly placeholder="Result">
+                            <select id="to-unit" aria-label="Select target unit"></select>
+                        </div>
+                    </div>
+                </div>
+                <div class="converter-footer">
+                    <div class="formula-box">
+                        <span class="formula-label"><i class="fa-solid fa-circle-info"></i> Formula:</span>
+                        <span id="formula-text" class="formula-text">1 meter = 3.28084 feet</span>
+                    </div>
+
+                    <button id="copy-btn" class="btn-copy" title="Copy result to clipboard">
+                        <i class="fa-regular fa-copy"></i>
+                        <span id="copy-text">Copy Result</span>
+                    </button>
+                </div>
+                <p id="rate-note" class="rate-note" hidden></p>
+            </div>
+
+            <div class="card reference-card">
+                <h2><i class="fa-solid fa-bookmark"></i> Common Equivalents</h2>
+                <div id="reference-list" class="reference-grid">
+                    
+                </div>
+            </div>
+
+            <section id="introduction" class="card content-section" aria-labelledby="intro-heading">
+                <div class="section-header">
+                    <h2 id="intro-heading"><i class="fa-solid fa-circle-info"></i> Introduction</h2>
+                </div>
+                <div class="intro-content">
+                    <p>
+                        This free online unit converter lets you translate values between metric, imperial, US customary,
+                        scientific, financial, and digital number systems in a single clean interface. Instead of memorizing
+                        conversion factors or switching between multiple calculators, simply pick a category, enter a value,
+                        and see the converted result update automatically as you type.
+                    </p>
+                    <p>
+                        Every conversion displays a clear unit-to-unit formula underneath the inputs along with a curated
+                        <strong>Common Equivalents</strong> card for quick reference. Whether you are checking cooking
+                        measurements, engineering tolerances, travel distances, or binary-to-hexadecimal values, everything
+                        runs directly in your browser with zero sign-up required.
+                    </p>
+                </div>
+            </section>
+
+            <section id="categories" class="card content-section" aria-labelledby="categories-heading">
+                <div class="section-header">
+                    <h2 id="categories-heading"><i class="fa-solid fa-shapes"></i> Conversion Categories</h2>
+                    <p class="section-lead">Explore all 10 built-in categories. Click any card below to open it directly in the converter.</p>
+                </div>
+                <div class="categories-grid">
+                    <button type="button" class="category-overview-card" data-category="length">
+                        <div class="cat-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                        <h3>Length</h3>
+                        <p>Convert meters, kilometers, centimeters, millimeters, miles, yards, feet, and inches.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="weight">
+                        <div class="cat-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+                        <h3>Weight</h3>
+                        <p>Switch effortlessly between kilograms, grams, milligrams, pounds, and ounces.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="temperature">
+                        <div class="cat-icon"><i class="fa-solid fa-temperature-half"></i></div>
+                        <h3>Temperature</h3>
+                        <p>Convert Celsius (°C), Fahrenheit (°F), and Kelvin (K) using exact scale offsets.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="currency">
+                        <div class="cat-icon"><i class="fa-solid fa-coins"></i></div>
+                        <h3>Currency</h3>
+                        <p>Estimate conversions across USD, EUR, GBP, INR, JPY, AUD, CAD, CHF, and CNY.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="area">
+                        <div class="cat-icon"><i class="fa-solid fa-chart-area"></i></div>
+                        <h3>Area</h3>
+                        <p>Calculate square meters, square kilometers, square feet, square yards, acres, and hectares.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="volume">
+                        <div class="cat-icon"><i class="fa-solid fa-flask"></i></div>
+                        <h3>Volume</h3>
+                        <p>Convert liters, milliliters, cubic meters, US gallons, quarts, pints, cups, and fluid ounces.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="speed">
+                        <div class="cat-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Speed</h3>
+                        <p>Compare meters per second, km/h, mph, knots, and feet per second for travel or physics.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="pressure">
+                        <div class="cat-icon"><i class="fa-solid fa-compress"></i></div>
+                        <h3>Pressure</h3>
+                        <p>Convert Pascals, kilopascals, bar, PSI, standard atmospheres (atm), and Torr (mmHg).</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="power">
+                        <div class="cat-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h3>Power</h3>
+                        <p>Translate watts, kilowatts, megawatts, horsepower, and BTU/hour accurately.</p>
+                    </button>
+                    <button type="button" class="category-overview-card" data-category="numsys">
+                        <div class="cat-icon"><i class="fa-solid fa-hashtag"></i></div>
+                        <h3>Number Systems</h3>
+                        <p>Convert between Decimal (Base 10), Binary (Base 2), Octal (Base 8), and Hexadecimal (Base 16).</p>
+                    </button>
+                </div>
+            </section>
+
+            <section id="how-to-use" class="card content-section" aria-labelledby="how-heading">
+                <div class="section-header">
+                    <h2 id="how-heading"><i class="fa-solid fa-list-check"></i> How to Use</h2>
+                    <p class="section-lead">Follow four simple steps to get an accurate conversion in seconds.</p>
+                </div>
+                <ol class="steps-grid">
+                    <li class="step-card">
+                        <span class="step-number">1</span>
+                        <h3>Select a Category</h3>
+                        <p>Choose one of the 10 measurement tabs at the top—such as Length, Weight, Temp, or Base / Num.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step-number">2</span>
+                        <h3>Enter Your Value</h3>
+                        <p>Type a number into the <strong>From</strong> input box and pick your starting unit from the dropdown below it.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step-number">3</span>
+                        <h3>Pick Target Unit</h3>
+                        <p>Select your desired output unit in the <strong>To</strong> dropdown. Your answer and exact formula appear instantly.</p>
+                    </li>
+                    <li class="step-card">
+                        <span class="step-number">4</span>
+                        <h3>Swap or Copy</h3>
+                        <p>Click the amber swap button to reverse the units anytime, or press <strong>Copy Result</strong> to copy the full equation.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="popular-conversions" class="card content-section" aria-labelledby="popular-heading">
+                <div class="section-header">
+                    <h2 id="popular-heading"><i class="fa-solid fa-fire"></i> Popular Conversions</h2>
+                    <p class="section-lead">Frequently used conversions at a glance. Click any pair to load it into the calculator.</p>
+                </div>
+                <div class="popular-grid">
+                    <button type="button" class="popular-card" data-category="length" data-from="km" data-to="mi" data-value="1">
+                        <span class="pop-tag">Length</span>
+                        <span class="pop-pair">Kilometers to Miles</span>
+                        <span class="pop-example">1 km = 0.621371 mi</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="length" data-from="m" data-to="ft" data-value="1">
+                        <span class="pop-tag">Length</span>
+                        <span class="pop-pair">Meters to Feet</span>
+                        <span class="pop-example">1 m = 3.28084 ft</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="length" data-from="in" data-to="cm" data-value="1">
+                        <span class="pop-tag">Length</span>
+                        <span class="pop-pair">Inches to Centimeters</span>
+                        <span class="pop-example">1 in = 2.54 cm</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="weight" data-from="kg" data-to="lb" data-value="1">
+                        <span class="pop-tag">Weight</span>
+                        <span class="pop-pair">Kilograms to Pounds</span>
+                        <span class="pop-example">1 kg = 2.204623 lb</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="temperature" data-from="c" data-to="f" data-value="100">
+                        <span class="pop-tag">Temperature</span>
+                        <span class="pop-pair">Celsius to Fahrenheit</span>
+                        <span class="pop-example">100 °C = 212 °F</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="volume" data-from="gal" data-to="l" data-value="1">
+                        <span class="pop-tag">Volume</span>
+                        <span class="pop-pair">US Gallons to Liters</span>
+                        <span class="pop-example">1 gal = 3.78541 L</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="speed" data-from="kmh" data-to="mph" data-value="100">
+                        <span class="pop-tag">Speed</span>
+                        <span class="pop-pair">km/h to mph</span>
+                        <span class="pop-example">100 km/h = 62.137119 mph</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="pressure" data-from="bar" data-to="psi" data-value="1">
+                        <span class="pop-tag">Pressure</span>
+                        <span class="pop-pair">Bar to PSI</span>
+                        <span class="pop-example">1 bar = 14.503774 PSI</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="power" data-from="hp" data-to="w" data-value="1">
+                        <span class="pop-tag">Power</span>
+                        <span class="pop-pair">Horsepower to Watts</span>
+                        <span class="pop-example">1 hp = 745.69987 W</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="area" data-from="ha" data-to="m2" data-value="1">
+                        <span class="pop-tag">Area</span>
+                        <span class="pop-pair">Hectares to Square Meters</span>
+                        <span class="pop-example">1 ha = 10,000 m²</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="numsys" data-from="dec" data-to="hex" data-value="255">
+                        <span class="pop-tag">Number System</span>
+                        <span class="pop-pair">Decimal to Hexadecimal</span>
+                        <span class="pop-example">255 (Dec) = FF (Hex)</span>
+                    </button>
+                    <button type="button" class="popular-card" data-category="numsys" data-from="dec" data-to="bin" data-value="10">
+                        <span class="pop-tag">Number System</span>
+                        <span class="pop-pair">Decimal to Binary</span>
+                        <span class="pop-example">10 (Dec) = 1010 (Bin)</span>
+                    </button>
+                </div>
+            </section>
+
+            <section id="conversion-guides" class="card content-section" aria-labelledby="guides-heading">
+                <div class="section-header">
+                    <h2 id="guides-heading"><i class="fa-solid fa-book-open"></i> Conversion Guides</h2>
+                    <p class="section-lead">Learn the exact formulas, worked examples, reference tables, and real-world uses behind our most popular unit conversions.</p>
+                </div>
+                <div class="guides-grid">
+                    <a href="guides/meters-to-feet.html" class="guide-link-card">
+                        <span class="guide-cat">Length Guide</span>
+                        <h3>Meters to Feet</h3>
+                        <p>Convert meters to decimal feet and feet-and-inches with room, height, and construction examples.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="guides/kg-to-pounds.html" class="guide-link-card">
+                        <span class="guide-cat">Weight Guide</span>
+                        <h3>Kilograms to Pounds</h3>
+                        <p>Understand the 2.20462 multiplier for luggage weight limits, gym training, and parcel shipping.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="guides/celsius-to-fahrenheit.html" class="guide-link-card">
+                        <span class="guide-cat">Temperature Guide</span>
+                        <h3>Celsius to Fahrenheit</h3>
+                        <p>Master the (°C &times; 9/5) + 32 scale formula for weather forecasts, body temp, and baking ovens.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="guides/liters-to-gallons.html" class="guide-link-card">
+                        <span class="guide-cat">Volume Guide</span>
+                        <h3>Liters to US Gallons</h3>
+                        <p>Convert liters to US liquid gallons and see why UK Imperial gallons differ by roughly 20%.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="guides/km-to-miles.html" class="guide-link-card">
+                        <span class="guide-cat">Distance Guide</span>
+                        <h3>Kilometers to Miles</h3>
+                        <p>Convert road signs, speed limits, and race distances (5K, 10K, marathon) from km to miles.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                    <a href="guides/inches-to-cm.html" class="guide-link-card">
+                        <span class="guide-cat">Length Guide</span>
+                        <h3>Inches to Centimeters</h3>
+                        <p>Use the exact 2.54 factor for screen diagonals, clothing measurements, DIY hardware, and print sizes.</p>
+                        <span class="guide-cta">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+                </div>
+            </section>
+
+            <section id="faq" class="card content-section" aria-labelledby="faq-heading">
+                <div class="section-header">
+                    <h2 id="faq-heading"><i class="fa-solid fa-circle-question"></i> Frequently Asked Questions</h2>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item" open>
+                        <summary>How accurate are the unit conversions?</summary>
+                        <p>
+                            Physical and mathematical conversions (length, weight, temperature, area, volume, speed,
+                            pressure, power, and number systems) use standard conversion constants and display up to 6
+                            decimal places. For currency conversions, the tool uses built-in reference exchange rates for
+                            quick estimates—always verify live market rates before making financial decisions.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Why does temperature conversion work differently from length or weight?</summary>
+                        <p>
+                            Unlike length or weight, temperature scales do not share the same zero point. For example,
+                            0 °C equals 32 °F and 273.15 K. Instead of a single multiplication factor, the converter applies
+                            exact offset formulas such as <code>°F = (°C × 9/5) + 32</code> and <code>K = °C + 273.15</code>.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I use the Base / Num (Number System) converter?</summary>
+                        <p>
+                            Select the <strong>Base / Num</strong> tab, pick your input base (Decimal, Binary, Octal, or
+                            Hexadecimal), and enter a valid value for that base—for example, only <code>0</code> and
+                            <code>1</code> for Binary, or <code>0–9</code> and <code>A–F</code> for Hexadecimal. The tool
+                            automatically validates characters and converts to your target base.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I reverse units or copy my conversion result?</summary>
+                        <p>
+                            Yes. Click the circular amber swap button between the two unit boxes to flip the source and
+                            target units immediately. Once your result appears, click <strong>Copy Result</strong> to copy
+                            the full formatted conversion string to your clipboard.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What is the difference between metric and imperial/US units?</summary>
+                        <p>
+                            The metric system (meters, kilograms, liters) is decimal-based, scaling cleanly by powers of
+                            10. Imperial and US customary units (inches, feet, miles, pounds, ounces, US gallons) use
+                            historical ratios such as 12 inches per foot or 16 ounces per pound. This tool bridges both
+                            systems automatically.
+                        </p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Is this converter free to use on mobile and desktop?</summary>
+                        <p>
+                            Yes, the unit converter is 100% free with no account or installation required. Its layout adapts
+                            automatically to smartphones, tablets, and desktop screens, and all calculations run locally in
+                            your browser.
+                        </p>
+                    </details>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2026 UnitConversion &mdash; Free Online Unit Converter across multiple categories. | <a href="mailto:manasvistudent2006@gmail.com">manasvistudent2006@gmail.com</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
